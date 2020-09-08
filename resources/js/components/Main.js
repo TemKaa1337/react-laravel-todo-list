@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './header/Header';
+import Footer from './footer/Footer';
+import Login from './login/Login';
+import Register from './registration/Register';
+
 function Main() {
     return (
         <div className="container">
+            <Header />
             <div className="row justify-content-center">
                 <div className="col-md-8">
                     <div className="card">
@@ -13,6 +19,7 @@ function Main() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
