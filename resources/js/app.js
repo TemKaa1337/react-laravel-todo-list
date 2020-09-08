@@ -12,4 +12,5 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+// Here yo need to registrate all of your react components
 require('./components/Main');

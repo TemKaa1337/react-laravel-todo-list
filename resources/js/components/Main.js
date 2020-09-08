@@ -19,6 +19,6 @@ function Main() {
 
 export default Main;
 
-if (document.getElementById('main')) {
-    ReactDOM.render(<Main />, document.getElementById('main'));
+if (document.getElementById('app')) {
+    ReactDOM.render(<Main />, document.getElementById('app'));
 }
