@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -67,6 +68,6 @@
         <div id = "app">
 
         </div>
-        <script src = "{{ asset('js/app.js') }}"></script>
+        <script src = "{{ mix('js/app.js') }}"></script>
     </body>
 </html>
