@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import '../../../css/footer/footer.css';
+
 function Footer() {
     return (
-        <div class="jumbotron text-center">
-            <p>Footer</p>
+        <div className = "footer">
+            
         </div>
     );
 }

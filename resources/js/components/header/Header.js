@@ -1,23 +1,45 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Header() {
-    
+import '../../../css/header/header.css';
+
+function getAuthButtons(props) {
+    if (props.isAuthenticated) {
+        return [
+            <li key = {0}  className = "auth">
+                <a className = "" href="#">Log out</a>
+            </li>
+        ];
+    } else {
+        return [
+            <li key = {0} className = "auth">
+                <a className = "" href="#">Register</a>
+            </li>,
+            <li key = {1} className = "auth">
+                <a className = "" href="#">Log in</a>
+            </li>
+        ];
+    }
+}
+
+function Header(props) {
+
     return (
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Active</a>
+        <nav className = "header">
+            <ul className = "">
+                <li className = "">
+                    <a className = "" href="#">Active</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li className = "">
+                    <a className = "" href="#">Link</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                <li className = "">
+                    <a className = "" href="#">Link</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                <li className = "">
+                    <a className = "" href="#">Disabled</a>
                 </li>
+                { getAuthButtons(props) }
             </ul>
         </nav>
     );

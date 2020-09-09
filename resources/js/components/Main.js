@@ -1,23 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// react components
 import Header from './header/Header';
 import Footer from './footer/Footer';
-import Login from './login/Login';
-import Register from './registration/Register';
+import Login from './auth/Login';
+import Register from './auth/Register';
+import Day from './card/Day';
+
+// page styles
+import '../../css/main.css';
+
+function getDayCards() {
+    let dayCards = [];
+
+    for (let i = 0; i < 7; i ++) {
+        dayCards.push(
+            <Day key = {i} dayNumber = {i} />
+        );
+    }
+
+    return dayCards;
+}
 
 function Main() {
     return (
-        <div className="container">
-            <Header />
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Main App Component</div>
-
-                        <div className="card-body">I'm an example component!</div>
-                    </div>
-                </div>
+        <div className = "app-container">
+            <Header isAuthenticated = {false} />
+            <div className = "content">
+                { getDayCards() }
             </div>
             <Footer />
         </div>

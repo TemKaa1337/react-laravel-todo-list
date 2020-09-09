@@ -1,0 +1,12 @@
+.day-card {
+    display: table-cell;
+}
+
+.day-card-inner {
+    border-radius: 1px;
+    padding: 10px;
+}
+
+.job-card {
+
+}
