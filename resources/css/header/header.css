@@ -11,6 +11,7 @@ nav li {
 }
 
 nav li:hover {
+    outline: none;
     background-color: #000000;
     border-radius: 5px;
     text-decoration: none;
@@ -30,4 +31,12 @@ nav a {
 .auth {
     float: right;
     display: inline;
+}
+
+.auth:hover {
+    background-color: #3490dc;
+}
+
+.auth:hover + a {
+    outline: none;
 }

@@ -3,10 +3,30 @@
 }
 
 .day-card-inner {
-    border-radius: 1px;
-    padding: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    margin: 10px;
+}
+
+.day-card-date {
+    all: none;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.day-card-date:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .job-card {
 
 }
+
+.critical {
+
+}
+

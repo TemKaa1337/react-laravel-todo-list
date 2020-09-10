@@ -98,7 +98,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".day-card {\r\n    display: table-cell;\r\n}\r\n\r\n.day-card-inner {\r\n    border-radius: 1px;\r\n    padding: 10px;\r\n}\r\n\r\n.job-card {\r\n\r\n}", ""]);
+exports.push([module.i, ".day-card {\r\n    display: table-cell;\r\n}\r\n\r\n.day-card-inner {\r\n    border-radius: 5px;\r\n    border: 1px black solid;\r\n    margin: 10px;\r\n}\r\n\r\n.day-card-date {\r\n    all: none;\r\n    display: block;\r\n    color: black;\r\n    text-decoration: none;\r\n    text-align: center;\r\n    border-bottom: 1px solid black;\r\n}\r\n\r\n.day-card-date:hover {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n\r\n.job-card {\r\n\r\n}\r\n\r\n.critical {\r\n\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -136,7 +136,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".header {\r\n    width: 100%;\r\n    background-color: #211f1f;\r\n    border-radius: 5px;\r\n    height: 40px;\r\n}\r\n\r\nnav li {\r\n    float: left;\r\n    display: inline;\r\n}\r\n\r\nnav li:hover {\r\n    background-color: #000000;\r\n    border-radius: 5px;\r\n    text-decoration: none;\r\n}\r\n\r\nnav ul {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nnav a {\r\n    display: block;\r\n    padding: 8px 20px 8px 20px;\r\n    color: white;\r\n}\r\n\r\n.auth {\r\n    float: right;\r\n    display: inline;\r\n}", ""]);
+exports.push([module.i, ".header {\r\n    width: 100%;\r\n    background-color: #211f1f;\r\n    border-radius: 5px;\r\n    height: 40px;\r\n}\r\n\r\nnav li {\r\n    float: left;\r\n    display: inline;\r\n}\r\n\r\nnav li:hover {\r\n    outline: none;\r\n    background-color: #000000;\r\n    border-radius: 5px;\r\n    text-decoration: none;\r\n}\r\n\r\nnav ul {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nnav a {\r\n    display: block;\r\n    padding: 8px 20px 8px 20px;\r\n    color: white;\r\n}\r\n\r\n.auth {\r\n    float: right;\r\n    display: inline;\r\n}\r\n\r\n.auth:hover {\r\n    background-color: #3490dc;\r\n}\r\n\r\n.auth:hover + a {\r\n    outline: none;\r\n}", ""]);
 
 // exports
 
@@ -29565,7 +29565,9 @@ function Day(props) {
     className: "day-card"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "day-card-inner"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "day number ", props.dayNumber), getJobCards()));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "day-card-date"
+  }, "day number ", props.dayNumber), getJobCards()));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Day);

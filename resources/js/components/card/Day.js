@@ -22,7 +22,7 @@ function Day(props) {
     return (
         <div className = "day-card">
             <div className = 'day-card-inner'>
-                <a>day number {props.dayNumber}</a>
+                <a className = "day-card-date">day number {props.dayNumber}</a>
                 { getJobCards() }
             </div>
         </div>
